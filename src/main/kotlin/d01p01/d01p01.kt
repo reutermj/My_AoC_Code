@@ -11,7 +11,7 @@ fun step(i: Int, m: Int, a: Array<Boolean>): Int {
 }
 
 fun main(args: Array<String>) {
-    val a = Array(2021) { _ -> false }
+    val a = Array(2021) { false }
     File(args[0]).forEachLine { l ->
         val n = l.toInt()
         if (n <= 2020) {
