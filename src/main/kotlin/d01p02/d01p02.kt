@@ -21,9 +21,10 @@ fun main(args: Array<String>) {
 
     var l = step(0, 1, a)
     var m = step(l + 1, 1, a)
-    var r = step(2020, -1, a)
+    val rs = step(2020, -1, a)
 
-    while (l < r) {
+    while (l < rs) {
+        var r = rs
         while (m < r) {
             when {
                 l + m + r == 2020 -> {
