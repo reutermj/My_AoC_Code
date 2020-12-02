@@ -11,14 +11,13 @@ namespace JoshuaPuzzle
             for(int i = loc; i <= numbers.Count - depth; i++)
             {
                 List<int> copy = new List<int>(combination);
+                copy.Add(numbers[i]);
                 if (depth == 1)
                 {
-                    copy.Add(numbers[i]);
                     accumulator.Add(copy);
                 }
                 else
                 {
-                    copy.Add(numbers[i]);
                     GenerateCombinations(depth - 1, i + 1, numbers, copy, accumulator);
                 }
             }
