@@ -1,7 +1,6 @@
 package d07p02
 
 import java.io.File
-import java.lang.Exception
 
 class DiGraph constructor (private val edges: Map<String, List<Pair<Int, String>>>) {
     operator fun get(node: String): List<Pair<Int, String>>? = edges[node]
